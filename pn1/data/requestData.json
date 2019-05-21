@@ -1,0 +1,16 @@
+{
+  "login_001": {
+    "username": "admin",
+    "password": 123456,
+    "scope": "server",
+    "grant_type": "password"
+  },
+  "login_002": {
+    "fllowPerson": "",
+    "key": "",
+    "page": 1,
+    "pageSize":10,
+    "type":"",
+    "startTime":"",
+    "endTime":""}
+}
