@@ -1,7 +1,7 @@
 import xlrd
-
 from untils.public import *
 from untils.excel_data import *
+from xlutils.copy import copy
 class OperationExcel:
     def getExcel(self):
         db=xlrd.open_workbook(data_dir('data','data.xls'))
@@ -29,6 +29,35 @@ class OperationExcel:
         '''获取测试id'''
         return self.get_row_cel(row,getCaseID())
 
+    def writeResult(self,row,content):
+        '''测试结果写到文件中'''
+        col=getResult()
+        work=xlrd.open_workbook(data_dir('data','data.xls'))
+        old_content=copy(work)
+        ws=old_content.get_sheet(0)
+        ws.write(row,col,content)
+        old_content.save(data_dir('data','data.xls'))
 
-# opera=OperationExcel()
-# print(opera.getExpect(1))
+    def run_sucess_result(self):
+        '''获取成功的测试用例'''
+        pass_count=[]
+        fail_count=None
+        for i in range(1,self.get_rows()):
+            if self.getResult(i)=='pass':
+                pass_count.append(i)
+        return int(len(pass_count))
+    def run_fail_result(self):
+        '''获取失败的测试用例'''
+        return int((self.get_rows()-1)-self.run_sucess_result())
+
+    def run_pass_rate(self):
+        '''计算结果通过率'''
+        rate=''
+        if self.run_fail_result()==0:
+            rate='100%'
+        elif self.run_fail_result() !=0:
+            rate=str(int(self.run_sucess_result()/(self.get_rows()-1)*100))+"%"
+        return rate
+
+opera=OperationExcel()
+print(opera.run_fail_result())

@@ -1,4 +1,4 @@
-import token
+import json
 class ExcelVariable:
     caseID=0
     url=2
@@ -22,10 +22,11 @@ def getHeadersValue():
     return headers
 
 
-def getHeadersValue1(token):
+def getHeadersToken(row):
     '''获取请求头'''
-    headers = {"Content-Type":"application/json;charset=UTF-8",
-               "Authorization": "Bearer " + token
-               }
-    return headers
-
+    if row==1:
+        return getHeadersValue()
+    else:
+        with open("../data/token.json", 'r') as token:
+          headers = json.load(token)
+        return headers

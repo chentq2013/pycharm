@@ -8,9 +8,39 @@
   "login_002": {
     "fllowPerson": "",
     "key": "",
-    "page": 1,
-    "pageSize":10,
+    "page":1,
+    "pageSize":100,
     "type":"",
     "startTime":"",
-    "endTime":""}
+    "endTime":""
+  },
+   "login_003":{
+  "content": "自动化测试",
+  "id": "",
+  "logType": "HZ",
+  "overstockId": 125
+},
+  "login_005":{
+  "address": "吴中路369号",
+  "brand": "",
+  "city": 2,
+  "contact": "nana",
+  "country": 1,
+  "cycleType": "MONTH",
+  "email": "22136271072@qq.com",
+  "firstType": "工厂",
+  "id": "",
+  "name": "上海浦壹电子",
+  "phone": "18869584126",
+  "qq": "",
+  "remark":"",
+  "secondType": "OEM",
+  "shortRemark": "",
+  "source": "网络注册",
+  "state": 2,
+  "status": "",
+  "telephone": "",
+  "updateCycle": ""
 }
+   }
+
