@@ -189,9 +189,9 @@ function showOutput(id, name) {
 
 <div class='heading'>
 <h1>自动化测试报告</h1>
-<p class='attribute'><strong>Start Time:</strong> 2019-01-23 13:50:54</p>
-<p class='attribute'><strong>Duration:</strong> 0:00:34.208294</p>
-<p class='attribute'><strong>Status:</strong> Pass 3 Error 1</p>
+<p class='attribute'><strong>Start Time:</strong> 2019-05-28 10:26:33</p>
+<p class='attribute'><strong>Duration:</strong> 0:00:30.710065</p>
+<p class='attribute'><strong>Status:</strong> Pass 2 Failure 2</p>
 
 <p class='description'>自动化测试报告详细信息</p>
 </div>
@@ -221,18 +221,44 @@ function showOutput(id, name) {
     <td>View</td>
 </tr>
 
-<tr class='passClass'>
+<tr class='failClass'>
     <td>test_baidu_link.baidulink</td>
     <td>2</td>
-    <td>2</td>
-    <td>0</td>
+    <td>1</td>
+    <td>1</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1',2)">Detail</a></td>
 </tr>
 
-<tr id='pt1.1' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_baidu_maps: 百度地图是否可以正常跳转</div></td>
-    <td colspan='5' align='center'>pass</td>
+<tr id='ft1.1' class='none'>
+    <td class='failCase'><div class='testcase'>test_baidu_maps: 百度地图是否可以正常跳转</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.1')" >
+        fail</a>
+
+    <div id='div_ft1.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.1: Traceback (most recent call last):
+  File "F:\pycharm\test_unittest1\testCase\test_baidu_link.py", line 22, in test_baidu_maps
+    self.assertEqual(self.driver.current_url, 'https://map.baidu.com/')
+AssertionError: 'https://map.baidu.com/@13523265.31,3641114.64,12z' != 'https://map.baidu.com/'
+- https://map.baidu.com/@13523265.31,3641114.64,12z
++ https://map.baidu.com/
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
 </tr>
 
 <tr id='pt1.2' class='hiddenRow'>
@@ -240,31 +266,37 @@ function showOutput(id, name) {
     <td colspan='5' align='center'>pass</td>
 </tr>
 
-<tr class='errorClass'>
+<tr class='failClass'>
     <td>test_baidu_so.baidulink</td>
     <td>2</td>
     <td>1</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
     <td><a href="javascript:showClassDetail('c2',2)">Detail</a></td>
 </tr>
 
-<tr id='pt2.1' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_baiduso: 测试百度搜索结果页</div></td>
+<tr id='ft2.1' class='none'>
+    <td class='failCase'><div class='testcase'>test_baiduso: 测试百度搜索结果页</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.1')" >
-        pass</a>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft2.1')" >
+        fail</a>
 
-    <div id='div_pt2.1' class="popup_window">
+    <div id='div_ft2.1' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.1').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft2.1').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-pt2.1: &lt;bound method WebElement.get_attribute of &lt;selenium.webdriver.remote.webelement.WebElement (session="7ba46116e766dffc0101655911e36ed8", element="0.6749668646221227-1")&gt;&gt;
+ft2.1: Traceback (most recent call last):
+  File "F:\pycharm\test_unittest1\testCase\test_baidu_so.py", line 30, in test_baiduso
+    self.assertEqual(so.get_attribute('value'),'webdirver')
+AssertionError: 'selenium' != 'webdirver'
+- selenium
++ webdirver
+
 
 
         </pre>
@@ -274,40 +306,17 @@ pt2.1: &lt;bound method WebElement.get_attribute of &lt;selenium.webdriver.remot
     </td>
 </tr>
 
-<tr id='ft2.2' class='none'>
-    <td class='errorCase'><div class='testcase'>test_baiduso_enabled: 百度搜索框元素是否存在</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft2.2')" >
-        error</a>
-
-    <div id='div_ft2.2' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft2.2').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-ft2.2: Traceback (most recent call last):
-  File "F:\pycharm\test_unittest1\testCase\test_baidu_so.py", line 21, in test_baiduso_enabled
-    admin
-NameError: name 'admin' is not defined
-
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
+<tr id='pt2.2' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_baiduso_enabled: 百度搜索框元素是否存在</div></td>
+    <td colspan='5' align='center'>pass</td>
 </tr>
 
 <tr id='total_row'>
     <td>Total</td>
     <td>4</td>
-    <td>3</td>
+    <td>2</td>
+    <td>2</td>
     <td>0</td>
-    <td>1</td>
     <td>&nbsp;</td>
 </tr>
 </table>

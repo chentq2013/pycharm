@@ -24,9 +24,9 @@ def getHeadersValue():
 
 def getHeadersToken(row):
     '''获取请求头'''
-    if row==1:
+    if row==1 or row==2 :
         return getHeadersValue()
     else:
-        with open("../data/token.json", 'r') as token:
+        with open("F:/pycharm/pn1/data/token.json", 'r') as token:
           headers = json.load(token)
         return headers

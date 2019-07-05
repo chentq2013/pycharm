@@ -1,46 +1,370 @@
 {
-  "login_001": {
+  "login_01": {
     "username": "admin",
     "password": 123456,
     "scope": "server",
     "grant_type": "password"
   },
-  "login_002": {
+
+  "login_03": {
     "fllowPerson": "",
     "key": "",
-    "page":1,
-    "pageSize":100,
-    "type":"",
-    "startTime":"",
-    "endTime":""
+    "page": 1,
+    "pageSize": 100,
+    "type": "",
+    "startTime": "",
+    "endTime": ""
   },
-   "login_003":{
-  "content": "自动化测试",
+  "login_04": {
+    "content": "自动化测试",
+    "id": "",
+    "logType": "HZ",
+    "overstockId": 125
+  },
+  "login_05": {
+    "address": "吴中路369号",
+    "brand": "",
+    "city": 2,
+    "contact": "nana",
+    "country": 1,
+    "cycleType": "MONTH",
+    "email": "22136271072@qq.com",
+    "firstType": "工厂",
+    "id": "",
+    "name": "上海浦壹电子",
+    "phone": "18869584126",
+    "qq": "",
+    "remark": "",
+    "secondType": "OEM",
+    "shortRemark": "",
+    "source": "网络注册",
+    "state": 2,
+    "status": "",
+    "telephone": "",
+    "updateCycle": ""
+  },
+  "login_06": {
+    "address": "南京路6985号",
+    "brand": "13,16",
+    "city": 37,
+    "contact": "neinei",
+    "country": 1,
+    "cycleType": "MONTH",
+    "email": "2213627108@qq.com",
+    "firstType": 4,
+    "id": 57,
+    "name": "广州黑凤梨有限公司",
+    "phone": 16678965241,
+    "qq": "",
+    "remark": "这是一首浪漫的小情歌",
+    "secondType": "",
+    "shortRemark": "",
+    "source": "网络咨询",
+    "state": 4,
+    "status": "",
+    "telephone": "",
+    "updateCycle": ""
+  },
+  "login_07": {
+    "cycleType": "WEEK",
+    "id": 10,
+    "updateCycle": 10
+  },
+  "login_08": {
+    "list": [
+      10,
+      15,
+      18
+    ],
+    "operatingId": 8
+  },
+  "login_11": {
+    "name": "test",
+    "parentId": "",
+    "sort": 10
+  },
+  "login_12": {
+    "id": "",
+    "name": "ha",
+    "parentId": "",
+    "sort": "",
+    "status": "Y"
+  },
+  "login_13": {
+    "status": "",
+    "page": 1,
+    "pageSize": 100,
+    "startDate": "",
+    "name": "",
+    "endDate": ""
+  },
+  "login_14": {
+    "evaluationFile": "",
+    "name": ""
+  },
+  "login_15": {
+    "evaluateId": 48
+  },
+  "login_17": {
+    "evaluateId": 48
+  },
+  "login_18": {
+    "evaluateId": 49
+  },
+  "login_19": {
+    "id": 49
+  },
+  "login_20": {
+    "evaluationFile": "",
+    "name": ""
+  },
+  "login_21": {
+    "address": "",
+    "delivery": "CN",
+    "evaluateId": 0,
+    "exchangeRate": 0,
+    "factoryId": 0,
+    "invType": "TL",
+    "name": "",
+    "premium": 0,
+    "source": "",
+    "type": ""
+  },
+  "login_22": {
+    "partsId": 1,
+    "updatePrice": 10
+  },
+  "login_23": {
+    "partsIds": 10
+  },
+  "login_25": {
+    "customerId": 10,
+    "offerFile": "",
+    "overstockId ": ""
+
+  },
+   "login_28":
+           {
   "id": "",
-  "logType": "HZ",
-  "overstockId": 125
+  "status": "Y"
 },
-  "login_005":{
-  "address": "吴中路369号",
+   "login_29":[
+  {
+    "customerId": 10,
+    "entityId": 132
+  }
+   ],
+  "login_30": [
+  {
+    "availablePcs": 1006,
+    "costPrice": 12,
+    "guidePrice": 12,
+    "partId": 11756
+  }
+],
+  "login_33": {
+    "status": "",
+    "page": 1,
+    "pageSize": 100,
+    "startDate": "",
+    "name": "",
+    "endDate": "",
+    "factoryId": "",
+    "invType": "",
+    "isRfq": "N"
+  },
+  "login_34": {
+    "address": "SZ",
+    "delivery": "CN",
+    "factoryId": 0,
+    "invType": "TL",
+    "name": "沫沫-001",
+    "premium":1,
+    "source": "",
+    "type": "",
+    "guidePrice": "",
+    "id": 205,
+    "isRfq": "N",
+    "overstockFile": "F:/pycharm/pn1/data/overstock.xlsx"
+  }
+,"login_36": {
+    "address": "SZ",
+    "delivery": "CN",
+    "factoryId": 0,
+    "invType": "TL",
+    "name": "沫沫-001",
+    "premium":1,
+    "source": "",
+    "type": "",
+    "guidePrice": "",
+    "id": 205,
+    "isRfq": "N",
+    "overstockFile": "F:/pycharm/pn1/data/overstock.xlsx"
+  },
+  "login_39":{"keyword":""
+
+
+  },
+  "login_40": {
+    "status": "",
+    "page": 1,
+    "pageSize": 100,
+    "startDate": "",
+    "name": "",
+    "endDate": "",
+    "factoryId": "",
+    "invType": "",
+    "isRfq": "N"
+  },
+  "login_41":{
+  "id": 215,
+  "status": "N"
+},
+  "login_43":  {
+  "id": 0,
+  "status": "Y"
+},
+   "login_44":  {
+   "page": 1,
+    "pageSize": 100,
+     "key": ""
+   },
+  "login_45": {
+    "linkIds": "string",
+  "name": "string",
+  "shortName": "string"
+},
+  "login_46":
+  {
+  "id": 0,
+  "linkIds": "string",
+  "name": "string",
+  "shortName": "string"
+},
+  "login_48":
+  {
+  "key": 0
+},
+  "login_49": {
+    "behavior": "",
+    "page": 1,
+    "pageSize": 100,
+    "key": "上海",
+    "endTime": "",
+    "startTime": "",
+    "type": "",
+    "operating": ""
+  },
+  "login_50": {
+  "address": "",
   "brand": "",
-  "city": 2,
-  "contact": "nana",
-  "country": 1,
-  "cycleType": "MONTH",
-  "email": "22136271072@qq.com",
-  "firstType": "工厂",
-  "id": "",
-  "name": "上海浦壹电子",
-  "phone": "18869584126",
+  "city": "",
+  "company": "",
+  "district": "",
+  "email": "",
+  "id": 0,
+  "name": "",
+  "phone": "",
+  "province": "",
   "qq": "",
-  "remark":"",
-  "secondType": "OEM",
-  "shortRemark": "",
-  "source": "网络注册",
-  "state": 2,
+  "remark": "",
+  "secondType": "",
   "status": "",
   "telephone": "",
-  "updateCycle": ""
-}
-   }
+  "type": ""
+},
+  "login_51":{
+  "address": "",
+  "brand": "",
+  "city": "",
+  "company": "",
+  "district": "",
+  "email": "",
+  "id": 2,
+  "name": "",
+  "phone": "",
+  "province": "",
+  "qq": "",
+  "remark": "",
+  "secondType": "",
+  "status": "",
+  "telephone": "",
+  "type": ""
+},
+  "login_55":
+{
+  "list": [
+    0
+  ],
+  "operatingId": 0
+},
+   "login_56":  {
+   "page": 1,
+    "pageSize": 100,
+     "key": ""
+   },
 
+    "login_58":  {
+   "cycleType": "",
+    "endTime": "",
+     "startTime": "",
+    "type": ""
+},
+  "login_72":  {
+   "page": 1,
+    "pageSize": 100,
+     "key": ""
+   },
+  "login_73":{
+  "flagName": "",
+  "flagType": "",
+  "kvList": [
+    {
+      "dictKey": "",
+      "dictValue": ""
+    }
+  ]
+},"login_74": {
+  "dictValue": "",
+  "id": ""
+},
+  "login_83": {
+"link": "",
+    "materialFile": "",
+    "name": ""
+
+  },
+  "login_86":
+  {
+  "content": "hahhh",
+  "id": 1,
+  "source": "",
+  "title": ""
+},
+  "login_89":
+  {
+  "attachmentId": "hahhh",
+  "id": 1,
+  "link": "",
+  "materialFile": "",
+    "name":"",
+    "sort": "",
+    "type": ""
+
+},
+  "login_92": {
+          "type": "KHXJ"
+  },
+  "login_98": {
+    "inquiryId": 19,
+    "message": "True",
+    "offer": "2.36W",
+    "phone": "True"
+  },
+
+  "login_110": {
+    "page": 1,
+    "pageSize": 100
+
+  }
+}

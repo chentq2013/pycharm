@@ -2,21 +2,90 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ded83fb7-5085-4600-b507-82854d5f5b63" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pn1/bin/run.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pn1/data/token.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/pycharm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pycharm.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pn1/tests/runHtml.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pn1/tests/test_mdc/test_admin/init.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pn1/tests/test_mdc/test_admin/test_ evaluation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pn1/tests/test_mdc/test_admin/test_category.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pn1/tests/test_mdc/test_admin/test_customer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pn1/tests/test_mdc/test_admin/test_data_center.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pn1/tests/test_mdc/test_admin/test_data_dict.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pn1/tests/test_mdc/test_admin/test_login.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pn1/tests/test_mdc/test_admin/test_material.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pn1/tests/test_mdc/test_admin/test_rfq.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pn1/tests/test_mdc/test_admin/test_supplier.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pn1/tests/test_mdc/test_admin/test_user.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pn1/tests/test_mdc/test_admin/test_web.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pn1/tests/test_mdc/test_vadas/test_address.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pn1/tests/test_mdc/test_vadas/test_customer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pn1/tests/test_mdc/test_vadas/test_dict.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pn1/tests/test_mdc/test_vadas/test_index.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pn1/tests/test_mdc/test_vadas/test_overstock.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pn1/tests/test_mdc/test_vadas/test_user.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pn1/tests/test_omc/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pn1/tests/test_omc/test_admin/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pn1/tests/test_omc/test_admin/test_file.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pn1/tests/test_omc/test_admin/test_overstock.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pn1/tests/test_omc/test_admin/test_pay.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pn1/tests/test_omc/test_admin/test_userOrder.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pn1/tests/test_omc/test_vadas/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pn1/tests/test_omc/test_vadas/test_cart.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pn1/tests/test_omc/test_vadas/test_file.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pn1/tests/test_omc/test_vadas/test_order.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pn1/tests/test_omc/test_vadas/test_vbuyOrder.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pn1/tests/test_sec/test_admin/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pn1/tests/test_sec/test_admin/test_network.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pn1/tests/test_sec/test_admin/test_platform.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pn1/tests/test_sec/test_admin/test_pool.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pn1/tests/test_sec/test_vadas/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pn1/tests/test_sec/test_vadas/test_mcc.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pn1/tests/test_sec/test_vadas/test_partSo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pn1/tests/test_sec/test_vadas/test_vadaspa.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pn1/tests/test_sec/test_vadas/test_znl.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pn1/tests/test_uac/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pn1/tests/test_uac/test_admin/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pn1/tests/test_uac/test_admin/test_menu.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pn1/tests/test_uac/test_admin/test_sysrole.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pn1/tests/test_uac/test_admin/test_user.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pn1/tests/test_uac/test_vadas/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pn1/tests/test_uac/test_vadas/test_code.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pn1/tests/test_uac/test_vadas/test_vbuyuser.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pn1/tests/test_vadas_mdc.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pn1/tests/test_wx/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pn1/tests/test_wx/test_admin/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pn1/tests/test_wx/test_admin/test_order.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pn1/tests/test_wx/test_admin/test_qc.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pn1/tests/test_wx/test_wx/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pn1/tests/test_wx/test_wx/test_wx_Inquiry .py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pn1/tests/test_wx/test_wx/test_wx_order.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pn1/tests/test_wx/test_wx/test_wx_parts .py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pn1/tests/test_wx/test_wx/test_wx_qc.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pn1/tests/test_wx/test_wx/test_wx_user .py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_unittest1/moco/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_unittest1/moco/open.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pn1/base/method.py" beforeDir="false" afterPath="$PROJECT_DIR$/pn1/base/method.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pn1/config/record.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pn1/data/data.xls" beforeDir="false" afterPath="$PROJECT_DIR$/pn1/data/data.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pn1/bin/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/pn1/bin/Run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pn1/data/data.xls" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pn1/data/requestData.json" beforeDir="false" afterPath="$PROJECT_DIR$/pn1/data/requestData.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pn1/data/supplierID" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pn1/data/token.json" beforeDir="false" afterPath="$PROJECT_DIR$/pn1/data/token.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pn1/page/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/pn1/page/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pn1/tests/test_admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/pn1/tests/test_admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pn1/tests/test_admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pn1/tests/test_mdc/__init__.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pn1/untils/excel_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/pn1/untils/excel_data.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pn1/untils/operationExcel.py" beforeDir="false" afterPath="$PROJECT_DIR$/pn1/untils/operationExcel.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pn1/untils/operationJson.py" beforeDir="false" afterPath="$PROJECT_DIR$/pn1/untils/operationJson.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pn1/untils/public.py" beforeDir="false" afterPath="$PROJECT_DIR$/pn1/untils/public.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_unittest1/testCase/alltestrun.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_unittest1/testCase/alltestrun.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_unittest1/testCase/report/2019-01-23 13_29_00testreport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_unittest1/testCase/report/2019-01-23 13_50_54testreport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_unittest1/testCase/report/2019-01-23 13_54_19testreport.html" beforeDir="false" afterPath="$PROJECT_DIR$/test_unittest1/testCase/report/2019-05-28 13_06_30.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_unittest1/testCase/report/2019-01-23 14_38_38testreport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_unittest1/testCase/report/2019-01-23 16_23_26testreport.html" beforeDir="false" afterPath="$PROJECT_DIR$/pn1/tests/test_mdc/test_admin/test_brand.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_unittest1/testCase/report/2019-01-23 16_25_47testreport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_unittest1/testCase/report/2019-01-23 17_09_54testreport.html" beforeDir="false" afterPath="$PROJECT_DIR$/test_unittest1/testCase/report/2019-05-28 10_26_33testreport.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_unittest1/testCase/report/2019-01-23 17_18_38testreport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_unittest1/testCase/report/2019-04-09 23_29_30testreport.html" beforeDir="false" afterPath="$PROJECT_DIR$/test_unittest1/testCase/report/2019-05-28 10_21_05testreport.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vadas_admin" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,41 +95,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pn1/base/method.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pn1/page/admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="56" column="8" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="8" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="353">
+              <caret line="93" column="8" lean-forward="true" selection-start-line="93" selection-start-column="8" selection-end-line="93" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pn1/data/supplierID">
+        <entry file="file://$PROJECT_DIR$/pn1/tests/test_vadas_mdc.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="2" selection-start-column="2" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pn1/data/requestData.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-78">
-              <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pn1/tests/test_admin.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-210">
-              <caret line="33" column="23" lean-forward="true" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
+            <state relative-caret-position="-442">
+              <caret line="22" column="28" lean-forward="true" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -69,46 +117,49 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pn1/untils/operationExcel.py">
+        <entry file="file://$PROJECT_DIR$/pn1/tests/test_mdc/test_admin/test_ evaluation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="62" column="29" selection-start-line="62" selection-start-column="11" selection-end-line="62" selection-end-column="29" />
+            <state relative-caret-position="109">
+              <caret line="40" column="14" lean-forward="true" selection-start-line="40" selection-start-column="14" selection-end-line="40" selection-end-column="14" />
               <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pn1/bin/run.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="428">
-              <caret line="36" column="33" lean-forward="true" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
-              <folding>
-                <element signature="e#0#48#0" expanded="true" />
+                <element signature="e#0#15#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pn1/page/admin.py">
+        <entry file="file://$PROJECT_DIR$/pn1/data/overstockId">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="43" column="23" lean-forward="true" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
+            <state>
+              <caret column="12" selection-start-column="1" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pn1/untils/operationJson.py">
+        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/unittest/case.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-              <folding>
-                <element signature="e#0#27#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="10047">
+              <caret line="604" selection-start-line="604" selection-end-line="604" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pn1/tests/test_mdc/test_admin/test_supplier.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="6" column="10" lean-forward="true" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pn1/data/requestData.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="34" column="21" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -118,9 +169,21 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="Python Script" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>open</find>
+      <find>result_table</find>
+      <find>put</find>
+      <find>print</find>
+      <find>distributeSu</find>
+      <find>key</find>
+      <find>分配</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -128,32 +191,65 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/vadas_admin/test_login.py" />
-        <option value="$PROJECT_DIR$/vadas-api/testfile/readconfig.py" />
-        <option value="$PROJECT_DIR$/vadas-api/testfile/runAll.py" />
-        <option value="$PROJECT_DIR$/vadas-api/testfile/config.ini" />
-        <option value="$PROJECT_DIR$/pn1/untils/excel.data.py" />
-        <option value="$PROJECT_DIR$/pn1/page--dxc/test-login.py" />
-        <option value="$PROJECT_DIR$/pn1/page--dxc/admin.py" />
-        <option value="$PROJECT_DIR$/pn1/untils/public.py" />
-        <option value="$PROJECT_DIR$/pn1/untils/excel_data.py" />
-        <option value="$PROJECT_DIR$/pn1/data/token.json" />
-        <option value="$PROJECT_DIR$/pn1/data/supplierID" />
-        <option value="$PROJECT_DIR$/pn1/base/method.py" />
-        <option value="$PROJECT_DIR$/pn1/untils/operationJson.py" />
-        <option value="$PROJECT_DIR$/pn1/data/requestData.json" />
-        <option value="$PROJECT_DIR$/pn1/page/admin.py" />
+        <option value="$PROJECT_DIR$/pn1/tests/report/testreport.html" />
+        <option value="$PROJECT_DIR$/pn1/tests/run.py" />
+        <option value="$PROJECT_DIR$/test_unittest1/testCase/alltestrun.py" />
+        <option value="$PROJECT_DIR$/pn1/bin/runHtml.py" />
+        <option value="$PROJECT_DIR$/pn1/bin/Run.py" />
+        <option value="$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/HTMLTestRunner.py" />
         <option value="$PROJECT_DIR$/pn1/tests/test_admin.py" />
+        <option value="$PROJECT_DIR$/pn1/tests/test_vadas_omc.py" />
+        <option value="$PROJECT_DIR$/pn1/tests/test_vadas_sec.py" />
+        <option value="$PROJECT_DIR$/pn1/tests/test_vadas_uac.py" />
+        <option value="$PROJECT_DIR$/pn1/tests/test_vadas_wx.py" />
+        <option value="$PROJECT_DIR$/pn1/data/supplierID" />
+        <option value="$PROJECT_DIR$/pn1/tests/runHtml.py" />
+        <option value="$PROJECT_DIR$/pn1/base/method.py" />
+        <option value="$PROJECT_DIR$/pn1/tests/test_vadas_mdc/test_vadas_mdc.py" />
+        <option value="$PROJECT_DIR$/pn1/tests/test_mdc/test_admin/test_rfq.py" />
+        <option value="$PROJECT_DIR$/pn1/tests/test_mdc/test_admin/test_brand.py" />
+        <option value="$PROJECT_DIR$/pn1/tests/test_mdc/test_admin/test_customer.py" />
+        <option value="$PROJECT_DIR$/pn1/tests/test_mdc/test_admin/test_data_center.py" />
+        <option value="$PROJECT_DIR$/pn1/tests/test_mdc/test_admin/test_data_dict.py" />
+        <option value="$PROJECT_DIR$/pn1/tests/test_mdc/test_admin/test_material.py" />
+        <option value="$PROJECT_DIR$/pn1/tests/test_mdc/test_admin/test_web.py" />
+        <option value="$PROJECT_DIR$/pn1/tests/test_mdc/test_admin/test_user.py" />
+        <option value="$PROJECT_DIR$/pn1/tests/test_mdc/test_vadas/test_user.py" />
+        <option value="$PROJECT_DIR$/pn1/tests/test_mdc/test_vadas/test_overstock.py" />
+        <option value="$PROJECT_DIR$/pn1/tests/test_mdc/test_vadas/test_address.py" />
+        <option value="$PROJECT_DIR$/pn1/tests/test_mdc/test_vadas/test_dict.py" />
+        <option value="$PROJECT_DIR$/pn1/tests/test_mdc/test_vadas/test_customer.py" />
+        <option value="$PROJECT_DIR$/pn1/tests/test_mdc/test_vadas/test_index.py" />
+        <option value="$PROJECT_DIR$/pn1/tests/test_omc/test_admin/test_pay.py" />
+        <option value="$PROJECT_DIR$/pn1/tests/test_mdc/__init__.py" />
+        <option value="$PROJECT_DIR$/pn1/data/token1.json" />
+        <option value="$PROJECT_DIR$/pn1/data/token.json" />
+        <option value="$PROJECT_DIR$/pn1/tests/test_sec/test_mcc.py" />
+        <option value="$PROJECT_DIR$/pn1/tests/test_sec/test_vadas/test_vadasparts.py" />
         <option value="$PROJECT_DIR$/pn1/untils/operationExcel.py" />
-        <option value="$PROJECT_DIR$/pn1/bin/run.py" />
+        <option value="$PROJECT_DIR$/pn1/untils/operationJson.py" />
+        <option value="$PROJECT_DIR$/pn1/tests/test_mdc/test_admin/test_login.py" />
+        <option value="$PROJECT_DIR$/pn1/tests/test_sec/test_vadas/test_mcc.py" />
+        <option value="$PROJECT_DIR$/pn1/untils/excel_data.py" />
+        <option value="$PROJECT_DIR$/pn1/data/requestData.json" />
+        <option value="$PROJECT_DIR$/pn1/data/suppierId" />
+        <option value="$PROJECT_DIR$/pn1/tests/test_sec/test_vadas/test_znl.py" />
+        <option value="$PROJECT_DIR$/pn1/tests/test_mdc/test_admin/_init_.py" />
+        <option value="$PROJECT_DIR$/pn1/tests/test_vadas_mdc.py" />
+        <option value="$PROJECT_DIR$/pn1/tests/test_mdc/test_admin/test_category.py" />
+        <option value="$PROJECT_DIR$/pn1/tests/test_mdc/test_admin/init.py" />
+        <option value="$PROJECT_DIR$/pn1/tests/test_mdc/test_admin/test_supplier.py" />
+        <option value="$PROJECT_DIR$/pn1/tests/test_mdc/test_admin/test_overstock.py" />
+        <option value="$PROJECT_DIR$/pn1/tests/test_mdc/test_admin/test_ evaluation.py" />
+        <option value="$PROJECT_DIR$/pn1/page/admin.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2727" />
-    <option name="y" value="43" />
-    <option name="width" value="964" />
-    <option name="height" value="1047" />
+    <option name="x" value="646" />
+    <option name="y" value="-23" />
+    <option name="width" value="1096" />
+    <option name="height" value="1099" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -191,19 +287,7 @@
               <item name="pycharm" type="b2602c69:ProjectViewProjectNode" />
               <item name="pycharm" type="462c0819:PsiDirectoryNode" />
               <item name="pn1" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pycharm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pycharm" type="462c0819:PsiDirectoryNode" />
-              <item name="pn1" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pycharm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pycharm" type="462c0819:PsiDirectoryNode" />
-              <item name="pn1" type="462c0819:PsiDirectoryNode" />
-              <item name="page" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pycharm" type="b2602c69:ProjectViewProjectNode" />
@@ -215,7 +299,41 @@
               <item name="pycharm" type="b2602c69:ProjectViewProjectNode" />
               <item name="pycharm" type="462c0819:PsiDirectoryNode" />
               <item name="pn1" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="test_mdc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pycharm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pycharm" type="462c0819:PsiDirectoryNode" />
+              <item name="pn1" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="test_mdc" type="462c0819:PsiDirectoryNode" />
+              <item name="test_admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pycharm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pycharm" type="462c0819:PsiDirectoryNode" />
+              <item name="pn1" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="test_sec" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pycharm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pycharm" type="462c0819:PsiDirectoryNode" />
+              <item name="pn1" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="test_sec" type="462c0819:PsiDirectoryNode" />
+              <item name="test_vadas" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pycharm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pycharm" type="462c0819:PsiDirectoryNode" />
+              <item name="pn1" type="462c0819:PsiDirectoryNode" />
               <item name="untils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pycharm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
@@ -235,16 +353,25 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pn1" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\pycharm\pn1\data" />
+      <recent name="F:\pycharm\pn1\tests\test_wx\test_wx" />
+      <recent name="F:\pycharm\pn1\tests" />
+      <recent name="F:\pycharm\pn1\tests\test_uac\test_vadas" />
+      <recent name="F:\pycharm\pn1\tests\test_mdc" />
+      <recent name="F:\pycharm\pn1\report" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\pycharm\pn1\page" />
+      <recent name="F:\pycharm\pn1\tests\test_sec\test_vadas" />
+      <recent name="F:\pycharm\pn1\tests\test_mdc" />
+      <recent name="F:\pycharm\pn1" />
+      <recent name="F:\pycharm\vadas_admin" />
+      <recent name="F:\pycharm\test" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -259,8 +386,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.run">
-    <configuration name="operationExcel" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.admin">
+    <configuration name="admin" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pn1" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -268,11 +395,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pn1/untils" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pn1/page" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pn1/untils/operationExcel.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pn1/page/admin.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -281,76 +408,84 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="run" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="pn1" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pn1/bin" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pn1/bin/run.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests for test_admin.Admin.test_admin_003" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for test_ evaluation.OverStock" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="pn1" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pn1/tests" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pn1/tests/test_mdc/test_admin" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_admin.Admin.test_admin_003&quot;" />
+      <option name="_new_target" value="&quot;test_ evaluation.OverStock&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for test_admin.Admin.test_admin_005" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for test_ evaluation.OverStock.test_admin_13" type="tests" factoryName="Unittests" activateToolWindowBeforeRun="false" temporary="true" nameIsGenerated="true">
       <module name="pn1" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pn1/tests" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pn1/tests/test_mdc/test_admin" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_pattern" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_admin.Admin.test_admin_005&quot;" />
+      <option name="_new_target" value="&quot;test_ evaluation.OverStock.test_admin_13&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests in test_admin.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for test_ evaluation.OverStock.test_admin_15" type="tests" factoryName="Unittests" nameIsGenerated="true">
       <module name="pn1" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pn1/tests" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pn1/tests/test_mdc/test_admin" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/pn1/tests/test_admin.py&quot;" />
+      <option name="_new_target" value="&quot;test_ evaluation.OverStock.test_admin_15&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for test_ evaluation.OverStock.test_admin_17" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="pn1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pn1/tests/test_mdc/test_admin" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_ evaluation.OverStock.test_admin_17&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in test_ evaluation.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="pn1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pn1/tests/test_mdc/test_admin" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/pn1/tests/test_mdc/test_admin/test_ evaluation.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.run" />
-        <item itemvalue="Python.operationExcel" />
-        <item itemvalue="Python tests.Unittests in test_admin.py" />
-        <item itemvalue="Python tests.Unittests for test_admin.Admin.test_admin_005" />
-        <item itemvalue="Python tests.Unittests for test_admin.Admin.test_admin_003" />
+        <item itemvalue="Python.admin" />
+        <item itemvalue="Python tests.Unittests in test_ evaluation.py" />
+        <item itemvalue="Python tests.Unittests for test_ evaluation.OverStock" />
+        <item itemvalue="Python tests.Unittests for test_ evaluation.OverStock.test_admin_13" />
+        <item itemvalue="Python tests.Unittests for test_ evaluation.OverStock.test_admin_17" />
       </list>
     </recent_temporary>
   </component>
@@ -368,52 +503,61 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_test_admin_Admin_test_admin_002 - 2019.05.24 at 14h 54m 19s.xml">
-      <configuration name="Unittests for test_admin.Admin.test_admin_002" configurationId="tests" />
+    <history-entry file="Unittests_for_test__evaluation_OverStock_test_admin_15 - 2019.07.05 at 19h 10m 21s.xml">
+      <configuration name="Unittests for test_ evaluation.OverStock.test_admin_15" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_admin_Admin_test_admin_003 - 2019.05.24 at 14h 54m 36s.xml">
-      <configuration name="Unittests for test_admin.Admin.test_admin_003" configurationId="tests" />
+    <history-entry file="Unittests_for_test__evaluation_OverStock_test_admin_15 - 2019.07.05 at 19h 10m 36s.xml">
+      <configuration name="Unittests for test_ evaluation.OverStock.test_admin_15" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_admin_Admin_test_admin_005 - 2019.05.24 at 14h 54m 59s.xml">
-      <configuration name="Unittests for test_admin.Admin.test_admin_005" configurationId="tests" />
+    <history-entry file="Unittests_for_test__evaluation_OverStock_test_admin_13 - 2019.07.05 at 19h 12m 07s.xml">
+      <configuration name="Unittests for test_ evaluation.OverStock.test_admin_13" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_admin_Admin_test_admin_005 - 2019.05.24 at 14h 58m 57s.xml">
-      <configuration name="Unittests for test_admin.Admin.test_admin_005" configurationId="tests" />
+    <history-entry file="Unittests_for_test__evaluation_OverStock_test_admin_17 - 2019.07.05 at 19h 13m 16s.xml">
+      <configuration name="Unittests for test_ evaluation.OverStock.test_admin_17" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_admin_Admin_test_admin_005 - 2019.05.24 at 15h 00m 05s.xml">
-      <configuration name="Unittests for test_admin.Admin.test_admin_005" configurationId="tests" />
+    <history-entry file="Unittests_for_test__evaluation_OverStock_test_admin_17 - 2019.07.05 at 19h 13m 26s.xml">
+      <configuration name="Unittests for test_ evaluation.OverStock.test_admin_17" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_admin_Admin_test_admin_005 - 2019.05.24 at 15h 00m 12s.xml">
-      <configuration name="Unittests for test_admin.Admin.test_admin_005" configurationId="tests" />
+    <history-entry file="Unittests_for_test__evaluation_OverStock_test_admin_18 - 2019.07.05 at 19h 14m 45s.xml">
+      <configuration name="Unittests for test_ evaluation.OverStock.test_admin_18" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_admin_py - 2019.05.24 at 17h 30m 01s.xml">
-      <configuration name="Unittests in test_admin.py" configurationId="tests" />
+    <history-entry file="Unittests_for_test__evaluation_OverStock_test_admin_23 - 2019.07.05 at 19h 14m 47s.xml">
+      <configuration name="Unittests for test_ evaluation.OverStock.test_admin_23" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_admin_py - 2019.05.24 at 17h 30m 15s.xml">
-      <configuration name="Unittests in test_admin.py" configurationId="tests" />
+    <history-entry file="Unittests_for_test__evaluation_OverStock_test_admin_17 - 2019.07.05 at 19h 15m 02s.xml">
+      <configuration name="Unittests for test_ evaluation.OverStock.test_admin_17" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_admin_py - 2019.05.24 at 17h 30m 30s.xml">
-      <configuration name="Unittests in test_admin.py" configurationId="tests" />
+    <history-entry file="Unittests_for_test__evaluation_OverStock_test_admin_13 - 2019.07.05 at 19h 17m 35s.xml">
+      <configuration name="Unittests for test_ evaluation.OverStock.test_admin_13" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_admin_py - 2019.05.24 at 17h 30m 59s.xml">
-      <configuration name="Unittests in test_admin.py" configurationId="tests" />
+    <history-entry file="Unittests_in_test__evaluation_py - 2019.07.05 at 19h 21m 06s.xml">
+      <configuration name="Unittests in test_ evaluation.py" configurationId="tests" />
     </history-entry>
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.115911484" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15068494" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2635575" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.27114967" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.23427331" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3449024" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.30585682" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.329718" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.35683298" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.329718" />
@@ -423,17 +567,17 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.115911484" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15068494" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.39804772" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.30911064" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.23427331" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.17028199" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.46312365" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.329718" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.35683298" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.329718" />
@@ -444,289 +588,386 @@
     </layout-to-restore>
   </component>
   <component name="debuggerHistoryManager">
+    <expressions id="evaluateCodeFragment">
+      <expression>
+        <expression-string>a=evaOverstock(address=&quot;苏州&quot;,delivery =&quot;HK&quot;,factoryId=92,invType=&quot;TL&quot;,name=&quot;这是自动化上传的单子&quot;,isRfq=&quot;N&quot;,id=205,row=34)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>a=evaOverstock(address=&quot;苏州&quot;,delivery =&quot;HK&quot;,factoryId=92,invType=&quot;TL&quot;,name =&quot;这是自动化上传的单子&quot;,isRfq=&quot;N&quot;,id=205,row=34)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+    </expressions>
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>unittest.main</expression-string>
+        <expression-string>geturl(id=id, row=17)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>url=geturl(id=id, row=17)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>r = self.obj.patch(url=geturl(id=id, row=17), row=17)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>geturl(id=id, row=16)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>for i in range(0, 40):             evaluationid = str(r.json()['data']['records'][i]['id']) + ',' + evaluationid</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>writesupplierID(content=evaluationid,data='data',filename='overstockId')</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>evaluationid = str(r.json()['data']['records'][i]['id']) + ',' + evaluationid</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>detail(page=1, pageSize=30, row=13)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>supplierid=list[2]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vadas-api/caselist" />
-    <entry file="file://$PROJECT_DIR$/vadas-api/config.ini" />
-    <entry file="file://$PROJECT_DIR$/vadas-api/testfile/runAll.py" />
-    <entry file="file://$PROJECT_DIR$/vadas-api/testfile/readconfig.py" />
-    <entry file="file://$PROJECT_DIR$/vadas-api/testfile/config.ini" />
-    <entry file="file://$PROJECT_DIR$/vadas-api/testfile/caselist" />
-    <entry file="file://$PROJECT_DIR$/vadas-api/vadas-vbuy.com.py" />
-    <entry file="file://$PROJECT_DIR$/vadas_admin/test_login.py" />
-    <entry file="file://$PROJECT_DIR$/pn1/config/config,ini" />
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/xlrd/sheet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="412" column="8" selection-start-line="412" selection-start-column="8" selection-end-line="412" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pn1/Readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pn1/config/config.ini">
+    <entry file="file://$PROJECT_DIR$/pn1/tests/test_omc/test_admin/test_pay.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/token.py">
+    <entry file="file://$PROJECT_DIR$/pn1/tests/test_wx/test_admin/test_qc.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pn1/tests/test_wx/test_wx/test_wx_qc.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pn1/tests/test_sec/test_admin/test_pool.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pn1/tests/test_uac/test_admin/test_menu.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pn1/tests/test_uac/test_vadas/test_code.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pn1/tests/test_wx/test_wx/test_wx_user .py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pn1/tests/test_wx/test_wx/test_wx_parts .py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pn1/tests/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/pn1/tests/test_mdc/test_admin/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/pn1/tests/test_mdc/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/test_unittest1/test1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="136" column="19" lean-forward="true" selection-start-line="136" selection-start-column="19" selection-end-line="136" selection-end-column="19" />
+        <state relative-caret-position="352">
+          <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/requests/utils.py">
+    <entry file="file://$PROJECT_DIR$/test_unittest1/testf5.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="871" column="50" lean-forward="true" selection-start-line="871" selection-start-column="50" selection-end-line="871" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pn1/config/record.json" />
-    <entry file="file://$PROJECT_DIR$/vadas_admin/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="44">
-            <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/requests/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="303" column="35" lean-forward="true" selection-start-line="303" selection-start-column="35" selection-end-line="303" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/json/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="295" selection-start-line="295" selection-end-line="295" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/unittest/loader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="218" selection-start-line="218" selection-end-line="218" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/genericpath.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="148" selection-start-line="148" selection-end-line="148" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/ntpath.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="113" selection-start-line="113" selection-end-line="113" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pn1/untils/public.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pn1/data/token.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="46" selection-start-column="46" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/typing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="2318" column="8" selection-start-line="2318" selection-start-column="8" selection-end-line="2318" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/requests/api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="142" column="12" lean-forward="true" selection-start-line="142" selection-start-column="12" selection-end-line="142" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/unittest/suite.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="83" selection-start-line="83" selection-end-line="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/unittest/runner.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="182" column="28" lean-forward="true" selection-start-line="182" selection-start-column="28" selection-end-line="182" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pycharm/teamcity/unittestpy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="306" selection-start-line="306" selection-end-line="306" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/unittest/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="94" selection-start-line="94" selection-end-line="94" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pycharm/_jb_unittest_runner.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/unittest/case.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="604" selection-start-line="604" selection-end-line="604" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pn1/untils/excel_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pn1/data/supplierID">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="2" selection-start-column="2" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pn1/base/method.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="56" column="8" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/xlwt/CompoundDoc.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="261" selection-start-line="261" selection-end-line="261" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pn1/data/requestData.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-78">
-          <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pn1/untils/operationJson.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/unittest/__init__.pyi">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="248" column="8" selection-start-line="248" selection-start-column="8" selection-end-line="248" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="1740" selection-start-line="1740" selection-end-line="1740" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pn1/page/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="43" column="23" lean-forward="true" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/smtplib.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="665" column="8" selection-start-line="665" selection-start-column="8" selection-end-line="665" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pn1/tests/test_admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-210">
-          <caret line="33" column="23" lean-forward="true" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
+        <state relative-caret-position="330">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pn1/untils/operationExcel.py">
+    <entry file="file://$PROJECT_DIR$/test_unittest1/testf6.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="62" column="29" selection-start-line="62" selection-start-column="11" selection-end-line="62" selection-end-column="29" />
+        <state relative-caret-position="-44">
+          <caret line="16" column="27" lean-forward="true" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_unittest1/testf7.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="43" lean-forward="true" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_unittest1/testf9.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-162">
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_unittest1/testf11.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_unittest1/testf12.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="47" lean-forward="true" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_unittest1/testf10.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_unittest1/testf8.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-338">
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_unittest1/testf4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_unittest1/testf2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-154">
+          <caret line="14" column="40" lean-forward="true" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pn1/bin/Run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="32" lean-forward="true" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pn1/data/ts" />
+    <entry file="file://$PROJECT_DIR$/pn1/data/token1.json" />
+    <entry file="file://$PROJECT_DIR$/pn1/untils/public.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/xlrd/sheet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="414" selection-start-line="414" selection-end-line="414" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pn1/tests/test_sec/test_vadas/test_vadaspa.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pn1/data/token.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="101" selection-start-column="101" selection-end-column="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.3/system/python_stubs/1091621672/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1648">
+          <caret line="346" column="18" selection-start-line="346" selection-start-column="18" selection-end-line="346" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pn1/tests/test_sec/test_vadas/test_partSo.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pn1/tests/test_sec/test_vadas/test_mcc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="19" lean-forward="true" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pn1/base/method.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/email/mime/text.py">
+    <entry file="file://$PROJECT_DIR$/pn1/tests/test_mdc/test_admin/test_brand.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pn1/data/supplierID" />
+    <entry file="file://$PROJECT_DIR$/pn1/data/suppier" />
+    <entry file="file://$PROJECT_DIR$/pn1/untils/operationJson.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="102">
+          <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pn1/bin/run.py">
+    <entry file="file://$PROJECT_DIR$/pn1/untils/operationExcel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="36" column="33" lean-forward="true" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
+        <state relative-caret-position="483">
+          <caret line="58" column="53" selection-start-line="58" selection-start-column="53" selection-end-line="58" selection-end-column="53" />
           <folding>
-            <element signature="e#0#48#0" expanded="true" />
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pn1/tests/test_sec/test_vadas/test_znl.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pn1/tests/test_mdc/test_admin/test_login.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pn1/tests/test_mdc/test_admin/test_category.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="21" column="28" lean-forward="true" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pn1/data/suppierId">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="3" selection-start-column="3" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pn1/untils/excel_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pn1/tests/test_mdc/test_admin/init.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/unittest/case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10047">
+          <caret line="604" selection-start-line="604" selection-end-line="604" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pn1/data/requestData.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="34" column="21" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pn1/data/overstockId">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="12" selection-start-column="1" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pn1/tests/test_mdc/test_admin/test_supplier.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="10" lean-forward="true" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pn1/tests/test_mdc/test_admin/test_ evaluation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="40" column="14" lean-forward="true" selection-start-line="40" selection-start-column="14" selection-end-line="40" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pn1/tests/test_vadas_mdc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-442">
+          <caret line="22" column="28" lean-forward="true" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pn1/page/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="93" column="8" lean-forward="true" selection-start-line="93" selection-start-column="8" selection-end-line="93" selection-end-column="8" />
         </state>
       </provider>
     </entry>

@@ -189,9 +189,9 @@ function showOutput(id, name) {
 
 <div class='heading'>
 <h1>自动化测试报告</h1>
-<p class='attribute'><strong>Start Time:</strong> 2019-01-23 17:09:54</p>
-<p class='attribute'><strong>Duration:</strong> 0:00:36.978203</p>
-<p class='attribute'><strong>Status:</strong> Pass 3 Failure 1</p>
+<p class='attribute'><strong>Start Time:</strong> 2019-05-28 10:21:05</p>
+<p class='attribute'><strong>Duration:</strong> 0:00:32.798554</p>
+<p class='attribute'><strong>Status:</strong> Pass 2 Failure 2</p>
 
 <p class='description'>自动化测试报告详细信息</p>
 </div>
@@ -221,18 +221,44 @@ function showOutput(id, name) {
     <td>View</td>
 </tr>
 
-<tr class='passClass'>
+<tr class='failClass'>
     <td>test_baidu_link.baidulink</td>
     <td>2</td>
-    <td>2</td>
-    <td>0</td>
+    <td>1</td>
+    <td>1</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1',2)">Detail</a></td>
 </tr>
 
-<tr id='pt1.1' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_baidu_maps: 百度地图是否可以正常跳转</div></td>
-    <td colspan='5' align='center'>pass</td>
+<tr id='ft1.1' class='none'>
+    <td class='failCase'><div class='testcase'>test_baidu_maps: 百度地图是否可以正常跳转</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.1')" >
+        fail</a>
+
+    <div id='div_ft1.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.1: Traceback (most recent call last):
+  File "F:\pycharm\test_unittest1\testCase\test_baidu_link.py", line 22, in test_baidu_maps
+    self.assertEqual(self.driver.current_url, 'https://map.baidu.com/')
+AssertionError: 'https://map.baidu.com/@13523265.31,3641114.64,12z' != 'https://map.baidu.com/'
+- https://map.baidu.com/@13523265.31,3641114.64,12z
++ https://map.baidu.com/
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
 </tr>
 
 <tr id='pt1.2' class='hiddenRow'>
@@ -288,8 +314,8 @@ AssertionError: 'selenium' != 'webdirver'
 <tr id='total_row'>
     <td>Total</td>
     <td>4</td>
-    <td>3</td>
-    <td>1</td>
+    <td>2</td>
+    <td>2</td>
     <td>0</td>
     <td>&nbsp;</td>
 </tr>

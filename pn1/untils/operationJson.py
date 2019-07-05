@@ -14,6 +14,5 @@ class OperationJson:
         '''读取请求参数'''
         return self.getReadJson()[self.excel.get_request_data(row=row)]
 
-opera=OperationJson()
-a=opera.getRequestsData(5)
-
+# s=OperationJson()
+# print(s.getRequestsData(110))

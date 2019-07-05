@@ -2,6 +2,7 @@ import unittest
 import os
 import HTMLTestRunner
 import time
+import requests
 #执行模块下所有的测试用例
 def alltestcase():
     suite=unittest.TestLoader().discover(
@@ -14,9 +15,9 @@ def getnowtime():
     return time.strftime('%Y-%m-%d %H_%M_%S',time.localtime(time.time()))
 
 def run():
-    fp = os.path.join(os.path.dirname(__file__), 'report',getnowtime()+ 'testreport.html')
-    print(fp)
-
+    fp = os.path.join(os.path.dirname(__file__), 'report',getnowtime()+ '.html')
+    htmlf = open(fp, 'r', encoding="utf-8")
+    content = htmlf.read()
     HTMLTestRunner.HTMLTestRunner(stream=open(fp,'wb'),
                                   title='自动化测试报告',
                                   description='自动化测试报告详细信息',

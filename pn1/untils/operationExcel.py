@@ -4,7 +4,7 @@ from untils.excel_data import *
 from xlutils.copy import copy
 class OperationExcel:
     def getExcel(self):
-        db=xlrd.open_workbook(data_dir('data','data.xls'))
+        db=xlrd.open_workbook(data_dir('data','data.xlsx'))
         sheet=db.sheet_by_index(0)
         return sheet
     def get_rows(self):
@@ -32,7 +32,7 @@ class OperationExcel:
     def writeResult(self,row,content):
         '''测试结果写到文件中'''
         col=getResult()
-        work=xlrd.open_workbook(data_dir('data','data.xls'))
+        work=xlrd.open_workbook(data_dir('data','data.xlsx'))
         old_content=copy(work)
         ws=old_content.get_sheet(0)
         ws.write(row,col,content)
@@ -59,5 +59,5 @@ class OperationExcel:
             rate=str(int(self.run_sucess_result()/(self.get_rows()-1)*100))+"%"
         return rate
 
-opera=OperationExcel()
-print(opera.run_fail_result())
+# opera=OperationExcel()
+# print(opera.getUrl(110))

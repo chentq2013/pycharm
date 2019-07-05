@@ -1,13 +1,12 @@
 from untils.operationExcel import OperationExcel
-import unittest
-import os
 from email.mime.text import MIMEText
 import smtplib
+from tests.runHtml import *
 class Runner():
     def __init__(self):
         self.excel=OperationExcel()
-
-    def getSuite(self):
+    @staticmethod
+    def getSuite():
         '''获取要执行的测试套件'''
         suite=unittest.TestLoader().discover(
             start_dir=os.path.join(os.path.dirname(os.path.dirname(__file__)),'tests'),
@@ -15,6 +14,9 @@ class Runner():
             top_level_dir=None
         )
         return suite
+
+
+
 
     def send_email(self,to_user,sub,content):
         '''
@@ -29,7 +31,7 @@ class Runner():
         send_mail='smtp.qq.com'
         send_user='2213627107@qq.com'
         print(content)
-        message=MIMEText(content, 'plain', 'utf-8')
+        message=MIMEText(content, 'html', 'utf-8')
         message['Subject']=sub
         message['FROM']=send_user
         message['To']=to_user
@@ -40,17 +42,22 @@ class Runner():
         server.close()
 
 
+
     def main_run(self):
         '''批量执行测试用例'''
         unittest.TextTestRunner().run(self.getSuite())
-        content='通过数:{0}  失败数:{1}  通过率:{2}'.format(
+        fp = os.path.join(os.path.dirname(__file__))
+        parent= os.path.abspath(os.path.dirname(fp) + os.path.sep + ".")
+        parent=os.path.join(parent,"tests","report","1111.html")
+        parent=parent.replace("\\","/")
+        htmlf = open(parent, 'r', encoding="utf-8")
+        count='通过数:{0}  失败数:{1}  通过率:{2}'.format(
             self.excel.run_sucess_result(),
             self.excel.run_fail_result(),
             self.excel.run_pass_rate())
+        content =count+ htmlf.read()
         print('please wait while the statistics test results are sent in the mail')
         self.send_email('2484779229@qq.com','接口自动化测试报告',content)
-
-
 
 if __name__ == '__main__':
     Runner().main_run()
