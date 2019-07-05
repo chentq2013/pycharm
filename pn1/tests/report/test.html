@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>接口自动化测试报告</title>
+    <meta name="generator" content="HTMLTestRunner 0.8.2"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    
+<style type="text/css" media="screen">
+body        { font-family: verdana, arial, helvetica, sans-serif; font-size: 80%; }
+table       { font-size: 100%; }
+pre         { }
+
+/* -- heading ---------------------------------------------------------------------- */
+h1 {
+	font-size: 16pt;
+	color: gray;
+}
+.heading {
+    margin-top: 0ex;
+    margin-bottom: 1ex;
+}
+
+.heading .attribute {
+    margin-top: 1ex;
+    margin-bottom: 0;
+}
+
+.heading .description {
+    margin-top: 4ex;
+    margin-bottom: 6ex;
+}
+
+/* -- css div popup ------------------------------------------------------------------------ */
+a.popup_link {
+}
+
+a.popup_link:hover {
+    color: red;
+}
+
+.popup_window {
+    display: none;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    /*border: solid #627173 1px; */
+    padding: 10px;
+    background-color: #E6E6D6;
+    font-family: "Lucida Console", "Courier New", Courier, monospace;
+    text-align: left;
+    font-size: 8pt;
+    width: 500px;
+}
+
+}
+/* -- report ------------------------------------------------------------------------ */
+#show_detail_line {
+    margin-top: 3ex;
+    margin-bottom: 1ex;
+}
+#result_table {
+    width: 80%;
+    border-collapse: collapse;
+    border: 1px solid #777;
+}
+#header_row {
+    font-weight: bold;
+    color: white;
+    background-color: #777;
+}
+#result_table td {
+    border: 1px solid #777;
+    padding: 2px;
+}
+#total_row  { font-weight: bold; }
+.passClass  { background-color: #6c6; }
+.failClass  { background-color: #c60; }
+.errorClass { background-color: #c00; }
+.passCase   { color: #6c6; }
+.failCase   { color: #c60; font-weight: bold; }
+.errorCase  { color: #c00; font-weight: bold; }
+.hiddenRow  { display: none; }
+.testcase   { margin-left: 2em; }
+
+
+/* -- ending ---------------------------------------------------------------------- */
+#ending {
+}
+
+</style>
+
+</head>
+<body>
+<script language="javascript" type="text/javascript"><!--
+output_list = Array();
+
+/* level - 0:Summary; 1:Failed; 2:All */
+function showCase(level) {
+    trs = document.getElementsByTagName("tr");
+    for (var i = 0; i < trs.length; i++) {
+        tr = trs[i];
+        id = tr.id;
+        if (id.substr(0,2) == 'ft') {
+            if (level < 1) {
+                tr.className = 'hiddenRow';
+            }
+            else {
+                tr.className = '';
+            }
+        }
+        if (id.substr(0,2) == 'pt') {
+            if (level > 1) {
+                tr.className = '';
+            }
+            else {
+                tr.className = 'hiddenRow';
+            }
+        }
+    }
+}
+
+
+function showClassDetail(cid, count) {
+    var id_list = Array(count);
+    var toHide = 1;
+    for (var i = 0; i < count; i++) {
+        tid0 = 't' + cid.substr(1) + '.' + (i+1);
+        tid = 'f' + tid0;
+        tr = document.getElementById(tid);
+        if (!tr) {
+            tid = 'p' + tid0;
+            tr = document.getElementById(tid);
+        }
+        id_list[i] = tid;
+        if (tr.className) {
+            toHide = 0;
+        }
+    }
+    for (var i = 0; i < count; i++) {
+        tid = id_list[i];
+        if (toHide) {
+            document.getElementById('div_'+tid).style.display = 'none'
+            document.getElementById(tid).className = 'hiddenRow';
+        }
+        else {
+            document.getElementById(tid).className = '';
+        }
+    }
+}
+
+
+function showTestDetail(div_id){
+    var details_div = document.getElementById(div_id)
+    var displayState = details_div.style.display
+    // alert(displayState)
+    if (displayState != 'block' ) {
+        displayState = 'block'
+        details_div.style.display = 'block'
+    }
+    else {
+        details_div.style.display = 'none'
+    }
+}
+
+
+function html_escape(s) {
+    s = s.replace(/&/g,'&amp;');
+    s = s.replace(/</g,'&lt;');
+    s = s.replace(/>/g,'&gt;');
+    return s;
+}
+
+/* obsoleted by detail in <div>
+function showOutput(id, name) {
+    var w = window.open("", //url
+                    name,
+                    "resizable,scrollbars,status,width=800,height=450");
+    d = w.document;
+    d.write("<pre>");
+    d.write(html_escape(output_list[id]));
+    d.write("\n");
+    d.write("<a href='javascript:window.close()'>close</a>\n");
+    d.write("</pre>\n");
+    d.close();
+}
+*/
+--></script>
+
+<div class='heading'>
+<h1>接口自动化测试报告</h1>
+<p class='attribute'><strong>Start Time:</strong> 2019-06-10 20:59:48</p>
+<p class='attribute'><strong>Duration:</strong> 0:00:08.859493</p>
+<p class='attribute'><strong>Status:</strong> Pass 11 Error 1</p>
+
+<p class='description'>自动化测试报告详细信息</p>
+</div>
+
+
+
+<p id='show_detail_line'>Show
+<a href='javascript:showCase(0)'>Summary</a>
+<a href='javascript:showCase(1)'>Failed</a>
+<a href='javascript:showCase(2)'>All</a>
+</p>
+<table id='result_table'>
+<colgroup>
+<col align='left' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+</colgroup>
+<tr id='header_row'>
+    <td>Test Group/Test case</td>
+    <td>Count</td>
+    <td>Pass</td>
+    <td>Fail</td>
+    <td>Error</td>
+    <td>View</td>
+</tr>
+
+<tr class='errorClass'>
+    <td>test_vadas_mdc.Admin</td>
+    <td>12</td>
+    <td>11</td>
+    <td>0</td>
+    <td>1</td>
+    <td><a href="javascript:showClassDetail('c1',12)">Detail</a></td>
+</tr>
+
+<tr id='pt1.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_admin_001: 登录接口</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='ft1.2' class='none'>
+    <td class='errorCase'><div class='testcase'>test_admin_002: 供应商信息搜索接口,并将id写入到supplierid文件中</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.2')" >
+        error</a>
+
+    <div id='div_ft1.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.2: Traceback (most recent call last):
+  File "C:\Users\taylor\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 387, in _make_request
+    six.raise_from(e, None)
+  File "&lt;string&gt;", line 2, in raise_from
+  File "C:\Users\taylor\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 383, in _make_request
+    httplib_response = conn.getresponse()
+  File "C:\Users\taylor\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 1331, in getresponse
+    response.begin()
+  File "C:\Users\taylor\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 297, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\taylor\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 258, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\taylor\AppData\Local\Programs\Python\Python36\lib\socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\taylor\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\adapters.py", line 440, in send
+    timeout=timeout
+  File "C:\Users\taylor\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 639, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "C:\Users\taylor\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\util\retry.py", line 357, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "C:\Users\taylor\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\packages\six.py", line 686, in reraise
+    raise value
+  File "C:\Users\taylor\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 601, in urlopen
+    chunked=chunked)
+  File "C:\Users\taylor\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 389, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "C:\Users\taylor\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 309, in _raise_timeout
+    raise ReadTimeoutError(self, url, "Read timed out. (read timeout=%s)" % timeout_value)
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='192.168.1.251', port=9999): Read timed out. (read timeout=6)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\pycharm\pn1\tests\test_vadas_mdc.py", line 39, in test_admin_002
+    r = self.obj.get(row=2)
+  File "F:\pycharm\pn1\base\method.py", line 35, in get
+    timeout=6)
+  File "C:\Users\taylor\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\api.py", line 72, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Users\taylor\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\taylor\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\taylor\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\taylor\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\adapters.py", line 521, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPConnectionPool(host='192.168.1.251', port=9999): Read timed out. (read timeout=6)
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.3' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_admin_003: 新增日志</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.3')" >
+        pass</a>
+
+    <div id='div_pt1.3' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.3').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.3: {"code":1,"msg":"success","data":true}
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.4' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_admin_004: 删除供应商接口</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.4')" >
+        pass</a>
+
+    <div id='div_pt1.4' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.4').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.4: supplierid: 61
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.5' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_admin_005: 添加供应商信息</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.5')" >
+        pass</a>
+
+    <div id='div_pt1.5' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.5').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.5: {"code":0,"msg":"手机号已经存在","data":null}
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.6' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_admin_006: 修改供应商信息</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.6')" >
+        pass</a>
+
+    <div id='div_pt1.6' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.6').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.6: {"code":0,"msg":"手机号已经存在","data":null}
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.7' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_admin_007: 修改供应商临时周期</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.7')" >
+        pass</a>
+
+    <div id='div_pt1.7' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.7').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.7: {"code":1,"msg":"success","data":true}
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.8' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_admin_008: 分配</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.8')" >
+        pass</a>
+
+    <div id='div_pt1.8' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.8').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.8: {"code":1,"msg":"success","data":true}
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.9' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_admin_009: 更新供应商的呆料</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.9')" >
+        pass</a>
+
+    <div id='div_pt1.9' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.9').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.9: {"code":0,"msg":"服务器异常","data":null}
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.10' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_admin_10: 类目列表</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.10')" >
+        pass</a>
+
+    <div id='div_pt1.10' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.10').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.10: {"code":1,"msg":"success","data":[{"id":2,"parentId":0,"name":"test-3","status":"Y","createBy":1,"updateBy":1,"updateTime":"2019-06-10 20:56:46","createTime":"2019-03-04 10:27:39","sort":1,"ladder":"1","children":[{"id":13,"parentId":2,"name":"分立半导体产品","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":2,"ladder":"2","children":[{"id":88,"parentId":13,"name":"功率驱动模块","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":170,"parentId":13,"name":"晶闸管","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":57,"parentId":13,"name":"二极管","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":169,"parentId":13,"name":"晶体管","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null}]},{"id":309,"parentId":2,"name":"测试12580000","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":2,"ladder":"2","children":[]},{"id":12,"parentId":2,"name":"集成电路（IC）","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":111,"ladder":"2","children":[{"id":114,"parentId":12,"name":"存储器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":135,"parentId":12,"name":"接口串行器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":139,"parentId":12,"name":"接口录制及重放","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":143,"parentId":12,"name":"接口模块","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":147,"parentId":12,"name":"接口编、接码器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":161,"parentId":12,"name":"数据采集器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":208,"parentId":12,"name":"电源管理器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":225,"parentId":12,"name":"线性乘除法器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":237,"parentId":12,"name":"能量测量器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":258,"parentId":12,"name":"逻辑信号解码器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":262,"parentId":12,"name":"逻辑校验器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":266,"parentId":12,"name":"逻辑触发器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":270,"parentId":12,"name":"逻辑锁销器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":134,"parentId":12,"name":"接口专用器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":138,"parentId":12,"name":"接口异步手法器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":142,"parentId":12,"name":"接口数字合成","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":146,"parentId":12,"name":"接口电信","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":153,"parentId":12,"name":"控制器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":222,"parentId":12,"name":"稳流器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":229,"parentId":12,"name":"线性视频处理器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":257,"parentId":12,"name":"逻辑专用器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":261,"parentId":12,"name":"逻辑栅极和逆变器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":265,"parentId":12,"name":"逻辑缓冲及收发器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":269,"parentId":12,"name":"逻辑通用总线函数","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":121,"parentId":12,"name":"嵌入式编程器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":137,"parentId":12,"name":"接口信号器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":141,"parentId":12,"name":"接口控制器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":145,"parentId":12,"name":"接口滤波器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":149,"parentId":12,"name":"接口驱动器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":221,"parentId":12,"name":"稳压器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":227,"parentId":12,"name":"线性比较器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":252,"parentId":12,"name":"转换器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":260,"parentId":12,"name":"逻辑存储器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":264,"parentId":12,"name":"逻辑移位寄存器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":268,"parentId":12,"name":"逻辑转换器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":307,"parentId":12,"name":"驱动器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":120,"parentId":12,"name":"嵌入式控制器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":136,"parentId":12,"name":"接口传感器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":140,"parentId":12,"name":"接口扩展器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":144,"parentId":12,"name":"接口模拟器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":148,"parentId":12,"name":"接口调节器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":165,"parentId":12,"name":"时钟及计时","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":215,"parentId":12,"name":"监控器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":226,"parentId":12,"name":"线性放大器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":251,"parentId":12,"name":"负载驱动器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":259,"parentId":12,"name":"逻辑多频振荡器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":263,"parentId":12,"name":"逻辑比较器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":267,"parentId":12,"name":"逻辑计数器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":301,"parentId":12,"name":"音频专用","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":52,"parentId":12,"name":"专用IC","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":1,"ladder":"3","children":null}]}]},{"id":11,"parentId":0,"name":"光电元件/磁性元器件","status":"Y","createBy":1,"updateBy":1,"updateTime":"2019-04-16 11:33:31","createTime":"2019-03-04 10:27:39","sort":1,"ladder":"1","children":[{"id":32,"parentId":11,"name":"磁性元件 - 变压器，电感元件","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":1,"ladder":"2","children":[{"id":112,"parentId":32,"name":"套件及五金","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":291,"parentId":32,"name":"铁氧体磁芯","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":219,"parentId":32,"name":"磁导线","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null}]},{"id":33,"parentId":11,"name":"光电元件","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":2,"ladder":"2","children":[{"id":73,"parentId":33,"name":"光纤","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":166,"parentId":33,"name":"显示器及模块","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":71,"parentId":33,"name":"光学元器件","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":58,"parentId":33,"name":"二极管及红外","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":100,"parentId":33,"name":"可寻址专用","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":42,"parentId":33,"name":"LED","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":95,"parentId":33,"name":"反相器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":216,"parentId":33,"name":"盖层及配件","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null}]}]},{"id":3,"parentId":0,"name":"电容、电阻/晶振器","status":"Y","createBy":1,"updateBy":1,"updateTime":"2019-04-03 15:52:02","createTime":"2019-03-04 10:27:39","sort":2,"ladder":"1","children":[{"id":14,"parentId":3,"name":"电阻器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":1,"ladder":"2","children":[{"id":272,"parentId":14,"name":"配件","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":256,"parentId":14,"name":"通孔电阻器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":213,"parentId":14,"name":"电阻器网络，阵列","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":55,"parentId":14,"name":"专用型电阻器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":123,"parentId":14,"name":"底座安装电阻器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":211,"parentId":14,"name":"电阻-表面安装","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null}]},{"id":16,"parentId":3,"name":"晶体，振荡器，谐振器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":3,"ladder":"2","children":[{"id":154,"parentId":16,"name":"插口和绝缘体","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":233,"parentId":16,"name":"编程振荡器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":91,"parentId":16,"name":"压控振荡器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":133,"parentId":16,"name":"振荡器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":190,"parentId":16,"name":"独立编辑器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":250,"parentId":16,"name":"谐振器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":167,"parentId":16,"name":"晶体","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null}]},{"id":15,"parentId":3,"name":"电容器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":4,"ladder":"2","children":[{"id":93,"parentId":15,"name":"双层电容器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":194,"parentId":15,"name":"电容器网络，阵列","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":292,"parentId":15,"name":"铝 - 聚合物电容器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":218,"parentId":15,"name":"硅电容器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":288,"parentId":15,"name":"钽电容器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":59,"parentId":15,"name":"云母和PTFE电容器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":130,"parentId":15,"name":"微调，可变电容器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":287,"parentId":15,"name":"钽 - 聚合物电容器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":296,"parentId":15,"name":"陶瓷电容器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":239,"parentId":15,"name":"薄膜电容器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":273,"parentId":15,"name":"配件","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":293,"parentId":15,"name":"铝电解电容器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":177,"parentId":15,"name":"氧化铌电容器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":1,"ladder":"3","children":null}]}]},{"id":4,"parentId":0,"name":"电感器/传送器/继电器","status":"Y","createBy":1,"updateBy":1,"updateTime":"2019-04-03 15:52:02","createTime":"2019-03-04 10:27:39","sort":3,"ladder":"1","children":[{"id":17,"parentId":4,"name":"电感器，线圈，扼流圈","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":1,"ladder":"2","children":[{"id":104,"parentId":17,"name":"固定值电感器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":294,"parentId":17,"name":"阵列，信号变压器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":102,"parentId":17,"name":"可调电感器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":124,"parentId":17,"name":"延迟线","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":164,"parentId":17,"name":"无线充电线圈","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null}]},{"id":18,"parentId":4,"name":"传感器，变送器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":2,"ladder":"2","children":[{"id":64,"parentId":18,"name":"传感编码器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":85,"parentId":18,"name":"力学传感器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":185,"parentId":18,"name":"灰尘传感器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":246,"parentId":18,"name":"触摸传感器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":63,"parentId":18,"name":"传感放大器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":70,"parentId":18,"name":"光学传感器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":176,"parentId":18,"name":"气体传感器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":182,"parentId":18,"name":"湿敏传感器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":285,"parentId":18,"name":"配件及其他","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":53,"parentId":18,"name":"专用传感器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":99,"parentId":18,"name":"变送器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":107,"parentId":18,"name":"图像传感器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":181,"parentId":18,"name":"温度传感器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":65,"parentId":18,"name":"位置传感器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":156,"parentId":18,"name":"收发传感器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":179,"parentId":18,"name":"液位传感器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":220,"parentId":18,"name":"磁性传感器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":253,"parentId":18,"name":"运动传感器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":304,"parentId":18,"name":"颜色传感器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null}]},{"id":19,"parentId":4,"name":"继电器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":3,"ladder":"2","children":[{"id":152,"parentId":19,"name":"接触器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":178,"parentId":19,"name":"汽车继电器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":232,"parentId":19,"name":"继电器插座","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":67,"parentId":19,"name":"信号继电器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":224,"parentId":19,"name":"笛簧继电器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":274,"parentId":19,"name":"配件","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":308,"parentId":19,"name":"高频继电器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":39,"parentId":19,"name":"I/O继电器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":87,"parentId":19,"name":"功率继电器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":106,"parentId":19,"name":"固态继电器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null}]}]},{"id":310,"parentId":0,"name":"显示器件","status":"Y","createBy":1,"updateBy":1,"updateTime":"2019-04-03 15:52:02","createTime":"2019-03-29 11:55:57","sort":4,"ladder":"1","children":[{"id":314,"parentId":310,"name":"LED数码管","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":1,"ladder":"2","children":[{"id":325,"parentId":314,"name":"节能数码管","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":1,"ladder":"3","children":null},{"id":319,"parentId":314,"name":"电感元件","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":111,"ladder":"3","children":null},{"id":317,"parentId":314,"name":"TFT LCD液晶显示屏","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":314,"ladder":"3","children":null}]},{"id":312,"parentId":310,"name":"发光二极管","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":1,"ladder":"2","children":[{"id":324,"parentId":312,"name":"电缆二极管","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":1,"ladder":"3","children":null},{"id":318,"parentId":312,"name":"其他显示器件","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":6,"ladder":"3","children":null}]},{"id":311,"parentId":310,"name":"LCD液晶屏","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":2,"ladder":"2","children":[{"id":315,"parentId":311,"name":"点阵","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":111,"ladder":"3","children":null},{"id":313,"parentId":311,"name":"触摸屏","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":311,"ladder":"3","children":null}]},{"id":322,"parentId":310,"name":"石英晶体谐振器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":5,"ladder":"2","children":[]},{"id":321,"parentId":310,"name":"变压器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":5,"ladder":"2","children":[]},{"id":320,"parentId":310,"name":"螺线管","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":6,"ladder":"2","children":[]},{"id":323,"parentId":310,"name":"电池","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":6,"ladder":"2","children":[]}]},{"id":5,"parentId":0,"name":"保护器/配电器/电源","status":"Y","createBy":1,"updateBy":1,"updateTime":"2019-04-03 15:52:02","createTime":"2019-03-04 10:27:39","sort":5,"ladder":"1","children":[{"id":330,"parentId":5,"name":"test-005","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":1,"ladder":"2","children":[]},{"id":329,"parentId":5,"name":"test-002","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":1,"ladder":"2","children":[]},{"id":20,"parentId":5,"name":"线路保护，配电，后备电源","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":1,"ladder":"2","children":[{"id":207,"parentId":20,"name":"电源插座","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":275,"parentId":20,"name":"配件","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":51,"parentId":20,"name":"不间断电源系统","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":1,"ladder":"3","children":null},{"id":231,"parentId":20,"name":"线路调节器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":2,"ladder":"3","children":null},{"id":35,"parentId":20,"name":"DC 到 AC转换器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":3,"ladder":"3","children":null}]},{"id":328,"parentId":5,"name":"test-01","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":1,"ladder":"2","children":[]},{"id":327,"parentId":5,"name":"test","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":1,"ladder":"2","children":[]},{"id":21,"parentId":5,"name":"电路保护","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":2,"ladder":"2","children":[{"id":276,"parentId":21,"name":"配件","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":162,"parentId":21,"name":"断路器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":1,"ladder":"3","children":null},{"id":203,"parentId":21,"name":"电涌抑制 IC","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":2,"ladder":"3","children":null},{"id":48,"parentId":21,"name":"TVS","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":3,"ladder":"3","children":null},{"id":271,"parentId":21,"name":"避雷器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":4,"ladder":"3","children":null},{"id":189,"parentId":21,"name":"照明保护","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":5,"ladder":"3","children":null},{"id":202,"parentId":21,"name":"电流限制器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":6,"ladder":"3","children":null},{"id":66,"parentId":21,"name":"保险","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":7,"ladder":"3","children":null}]},{"id":22,"parentId":5,"name":"电池产品","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":3,"ladder":"2","children":[{"id":300,"parentId":22,"name":"非充电电池","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":186,"parentId":22,"name":"点烟器配件","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":200,"parentId":22,"name":"电池组","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":277,"parentId":22,"name":"配件","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":199,"parentId":22,"name":"电池座，夹触点","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":68,"parentId":22,"name":"充电电池","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":198,"parentId":22,"name":"电池充电器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null}]}]},{"id":6,"parentId":0,"name":"射频IF和RFID/隔离器","status":"Y","createBy":1,"updateBy":1,"updateTime":"2019-04-03 15:52:02","createTime":"2019-03-04 10:27:39","sort":6,"ladder":"1","children":[{"id":23,"parentId":6,"name":"射频/IF 和 RFID","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":1,"ladder":"2","children":[{"id":84,"parentId":23,"name":"前端","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":97,"parentId":23,"name":"发射应答器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":119,"parentId":23,"name":"屏蔽和吸收材料","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":157,"parentId":23,"name":"放大器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":180,"parentId":23,"name":"混频器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":243,"parentId":23,"name":"解调器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":249,"parentId":23,"name":"调制器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":78,"parentId":23,"name":"其他IC和模块","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":96,"parentId":23,"name":"发射器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":118,"parentId":23,"name":"屏幕","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":151,"parentId":23,"name":"接收及发射器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":172,"parentId":23,"name":"检测器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":242,"parentId":23,"name":"衰减器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":248,"parentId":23,"name":"读取模块","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":94,"parentId":23,"name":"双工器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":116,"parentId":23,"name":"定向耦合器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":125,"parentId":23,"name":"开关","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":214,"parentId":23,"name":"监控IC","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":247,"parentId":23,"name":"评估和开发套件","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":86,"parentId":23,"name":"功率分配器/分线器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":110,"parentId":23,"name":"天线","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":122,"parentId":23,"name":"平衡变压器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":206,"parentId":23,"name":"电源控制器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":245,"parentId":23,"name":"触头和簧片衬垫","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":278,"parentId":23,"name":"配件","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null}]},{"id":24,"parentId":6,"name":"隔离器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":2,"ladder":"2","children":[{"id":76,"parentId":24,"name":"光隔离器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":171,"parentId":24,"name":"栅极驱动器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":56,"parentId":24,"name":"专用型隔离器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":160,"parentId":24,"name":"数字隔离器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null}]}]},{"id":7,"parentId":0,"name":"变压器，变换器，变量器","status":"Y","createBy":1,"updateBy":1,"updateTime":"2019-04-03 15:52:02","createTime":"2019-03-04 10:27:39","sort":7,"ladder":"1","children":[{"id":25,"parentId":7,"name":"变压器，变换器，变量器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":1,"ladder":"2","children":[{"id":204,"parentId":25,"name":"电源变压器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":302,"parentId":25,"name":"音频变压器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":201,"parentId":25,"name":"电流互感器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":297,"parentId":25,"name":"隔离变压器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":127,"parentId":25,"name":"开关转换器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":279,"parentId":25,"name":"配件","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":54,"parentId":25,"name":"专用变压器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":238,"parentId":25,"name":"脉冲变压器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null}]}]},{"id":8,"parentId":0,"name":"电磁阀、驱动模块/连接器","status":"Y","createBy":1,"updateBy":1,"updateTime":"2019-04-03 15:52:02","createTime":"2019-03-04 10:27:39","sort":8,"ladder":"1","children":[{"id":26,"parentId":8,"name":"电机，电磁阀，驱动器板/模块","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":1,"ladder":"2","children":[{"id":196,"parentId":26,"name":"电机 - AC，DC","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":175,"parentId":26,"name":"步进电机","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":241,"parentId":26,"name":"螺线管，致动器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":197,"parentId":26,"name":"电机驱动器板及模块","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":280,"parentId":26,"name":"配件","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null}]},{"id":27,"parentId":8,"name":"连接器，互连器件","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":2,"ladder":"2","children":[{"id":41,"parentId":27,"name":"Keystone连接器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":80,"parentId":27,"name":"刀片式电源连接器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":105,"parentId":27,"name":"固态照明连接器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":128,"parentId":27,"name":"弹簧加载和压力","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":223,"parentId":27,"name":"端子连接器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":255,"parentId":27,"name":"适配器间连接器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":40,"parentId":27,"name":"IC插座，晶体管","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":75,"parentId":27,"name":"光纤连接器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":103,"parentId":27,"name":"同轴连接器（RF）","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":115,"parentId":27,"name":"存储器连接器 ","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":217,"parentId":27,"name":"矩形连接器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":244,"parentId":27,"name":"触头及触电","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":306,"parentId":27,"name":"香蕉和尖头连接器 ","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":38,"parentId":27,"name":"FFC，FPC连接器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":69,"parentId":27,"name":"光伏连接器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":90,"parentId":27,"name":"卡边缘连接器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":113,"parentId":27,"name":"套管","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":173,"parentId":27,"name":"模块化连接器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":205,"parentId":27,"name":"电源接入连接器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":286,"parentId":27,"name":"重载连接器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":34,"parentId":27,"name":"D-Sub连接器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":49,"parentId":27,"name":"USB连接器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":82,"parentId":27,"name":"分路器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":108,"parentId":27,"name":"圆形连接器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":150,"parentId":27,"name":"接插式连接器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":235,"parentId":27,"name":"背板连接器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null}]}]},{"id":9,"parentId":0,"name":"电位计，可变电阻/滤波器","status":"Y","createBy":1,"updateBy":1,"updateTime":"2019-04-03 15:52:02","createTime":"2019-03-04 10:27:39","sort":9,"ladder":"1","children":[{"id":28,"parentId":9,"name":"电位计，可变电阻器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":1,"ladder":"2","children":[{"id":101,"parentId":28,"name":"可调功率电阻","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":159,"parentId":28,"name":"数值显示器电位计","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":155,"parentId":28,"name":"操纵杆电位计","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":83,"parentId":28,"name":"刻度盘","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":132,"parentId":28,"name":"拨轮式电位计","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":183,"parentId":28,"name":"滑动电位计","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":281,"parentId":28,"name":"配件","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":129,"parentId":28,"name":"微调电位计","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":163,"parentId":28,"name":"旋转式电位计","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null}]},{"id":29,"parentId":9,"name":"滤波器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":2,"ladder":"2","children":[{"id":47,"parentId":29,"name":"SAW 滤波器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":209,"parentId":29,"name":"电缆和接线","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":289,"parentId":29,"name":"铁氧体圆盘和平板","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":46,"parentId":29,"name":"RF 滤波器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":89,"parentId":29,"name":"单片晶体","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":192,"parentId":29,"name":"电力线滤波器模块","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":282,"parentId":29,"name":"配件","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":37,"parentId":29,"name":"EMI/RFI 滤波器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":295,"parentId":29,"name":"陶瓷滤波器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":36,"parentId":29,"name":"DSL 滤波器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":77,"parentId":29,"name":"共模扼流圈","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":240,"parentId":29,"name":"螺旋形滤波器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":290,"parentId":29,"name":"铁氧体磁珠和芯片","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":305,"parentId":29,"name":"馈通式电容器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":2,"ladder":"3","children":null}]}]},{"id":10,"parentId":0,"name":"开发板，套件，编程","status":"Y","createBy":1,"updateBy":1,"updateTime":"2019-04-03 15:52:02","createTime":"2019-03-04 10:27:39","sort":10,"ladder":"1","children":[{"id":30,"parentId":10,"name":"开发板，套件，编程器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":1,"ladder":"2","children":[{"id":50,"parentId":30,"name":"UV抹除器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":234,"parentId":30,"name":"编程适配器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":45,"parentId":30,"name":"MCU,DSP","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":111,"parentId":30,"name":"套件","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":158,"parentId":30,"name":"放大器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":283,"parentId":30,"name":"配件","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":44,"parentId":30,"name":"LED驱动器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":61,"parentId":30,"name":"传感器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":109,"parentId":30,"name":"复杂逻辑器件","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":131,"parentId":30,"name":"扩充板","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":228,"parentId":30,"name":"线性稳压器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":174,"parentId":30,"name":"模数转换器","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null}]},{"id":31,"parentId":10,"name":"套件","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":2,"ladder":"2","children":[{"id":72,"parentId":31,"name":"光导管套件","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":92,"parentId":31,"name":"原型开发套件","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":117,"parentId":31,"name":"射频屏蔽板套件","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":168,"parentId":31,"name":"晶体套件","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":188,"parentId":31,"name":"热缩管套件","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":210,"parentId":31,"name":"电路保护套间","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":284,"parentId":31,"name":"配件","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":62,"parentId":31,"name":"传感器套件","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":81,"parentId":31,"name":"分立元件套件","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":187,"parentId":31,"name":"热敏电阻套件","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":195,"parentId":31,"name":"电感器套件","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":230,"parentId":31,"name":"线缆套件","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":303,"parentId":31,"name":"音频套件","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":79,"parentId":31,"name":"其他套件","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":184,"parentId":31,"name":"滤波器套件","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":193,"parentId":31,"name":"电容器套件","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":254,"parentId":31,"name":"连接器套件","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":299,"parentId":31,"name":"静态控制套件","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":43,"parentId":31,"name":"LED套件","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":60,"parentId":31,"name":"五金套件","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":74,"parentId":31,"name":"光纤套件","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":98,"parentId":31,"name":"变压器套件","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":126,"parentId":31,"name":"开关套件","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":191,"parentId":31,"name":"电位计套件","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":212,"parentId":31,"name":"电阻器套件","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":236,"parentId":31,"name":"胶带套件","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null},{"id":298,"parentId":31,"name":"集成电路（IC）套件","status":"Y","createBy":null,"updateBy":null,"updateTime":null,"createTime":null,"sort":null,"ladder":"3","children":null}]}]},{"id":1,"parentId":0,"name":"其它","status":"Y","createBy":1,"updateBy":1,"updateTime":"2019-04-16 11:33:57","createTime":"2019-03-23 13:57:53","sort":12,"ladder":"1","children":[]}]}
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.11' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_admin_11: 类目保存</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.11')" >
+        pass</a>
+
+    <div id='div_pt1.11' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.11').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.11: {"code":0,"msg":"分类名称已存在","data":null}
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.12' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_admin_12: 类目修改</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.12')" >
+        pass</a>
+
+    <div id='div_pt1.12' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.12').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.12: {"code":1,"msg":"success","data":true}
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='total_row'>
+    <td>Total</td>
+    <td>12</td>
+    <td>11</td>
+    <td>0</td>
+    <td>1</td>
+    <td>&nbsp;</td>
+</tr>
+</table>
+
+<div id='ending'>&nbsp;</div>
+
+</body>
+</html>
